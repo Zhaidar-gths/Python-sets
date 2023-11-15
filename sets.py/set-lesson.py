@@ -1,60 +1,4 @@
-# set ерекшелігі - дубликатсия жасауға келмейді , және оның индексі болмайды яғни элементтер реттсіз тұрады 
-
-
-
-# We use len() method to find the length of a set.
-''''
-st = {'item1', 'item2', 'item3', 'item4'}
-len(st)
-print(st)
-'''''
-
-# Add жаңа элемент қосамыз ,қосатын жаңа элемент қаиталанбау керек сол кезде қосылады,және бір ғана элемент қосады
-''''
-fruits = {'banana', 'orange', 'mango', 'lemon'}
-fruits.add('lime')
-print(fruits)
-'''
-#ал көп элемент қосу үшін uptade қолданамыз
-''''
-fruits = {'banana', 'orange', 'mango', 'lemon'}
-vegetables = ('tomato', 'potato', 'cabbage','onion', 'carrot')
-fruits.update(vegetables)
-print(fruits)
-'''
-
-#exercises
-''''
-cities={"almaty","shymkent","astana","atrau","aktau"}
-print(len(cities))
-
-cities.add("taldykorgan")
-print(len(cities))
-
-# cities.add (input())
-# print(cities)
-
-# new_city=input("enter a city: ")
-
-# cities.add(new_city)
-# print(cities)
-'''
-
-''''
-cities={"almaty","shymkent","astana","atrau","aktau"}
-new_city=input("enter a city: ")
-if  new_city in cities :
-  cities.remove(new_city)
-  print(f"{new_city} was removed fromthe set") 
-else:
-  print("No such city")
-'''
-# cities= {"almaty", "Astana", "Karaganda", "Aktau", "Transelvania"}
-# new_city = input(" Enter a City: ")
-# a = new_city.split()
-# cities.update(a)
-# print(cities)
-
+# HOME WORK
 
 #Livel 1
 
@@ -76,3 +20,62 @@ print(it_companies)
 it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
 it_companies.remove('Microsoft')
 print(it_companies)
+
+
+# Livel 2
+
+#task 1
+A={11,22,33,44,55}
+B={11,22,33,44,55,66,77,88,99}
+
+print(A.union(B))
+
+#task 2
+A={11,22,33,44,55}
+B={11,22,33,44,55,66,77,88,99}
+print(A.intersection(B))
+
+# task 3
+print(A.issubset(B))
+
+#task 4
+print(A.isdisjoint(B))
+
+
+# task 5
+
+print(A.union(B))
+
+print(B.union(A))
+
+
+#task 6
+print(A.symmetric_difference(B))
+print(B.symmetric_difference(A))
+
+#task 7
+
+# del A, B, it_companies
+
+
+
+# Livel 3
+
+# task 1
+
+age = [ 19, 24, 25, 26, 24, 25, 24,15, 22, 43]
+
+age = set(age)
+print(age)
+print('length of the set:', len(age))
+
+
+#task 2
+# string: форма переменной/тип данных
+# lists: может быть изменен, упорядочен, не уникален, []
+# tuples: не может быть изменен, упорядочен, не уникален, ()
+# set: можно добавлять и удалять, но существующие элементы нельзя превращать в другие элементы, неупорядоченные, уникальные, {}
+
+#task 3
+words = {'I', 'am', 'a', 'teacher', 'and', 'I', 'love', 'to', 'inspire', 'and', 'teach', 'people'}
+print(len(words))
